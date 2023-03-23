@@ -15,7 +15,7 @@ for test_dir in "$test_directory"/test*; do
 
   input_file="$test_dir/test.a"
   expected_output_file="$test_dir/test.b"
-  actual_output_file="$test_dir/my_java_output.txt"
+  actual_output_file="$test_dir/my_output_java.txt"
 
 
   java "$java_file_path" < "$input_file" > "$actual_output_file"
