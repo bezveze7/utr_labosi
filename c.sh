@@ -18,8 +18,8 @@ for test_dir in "$test_directory"/test*; do
   actual_output_file="$test_dir/my_output_c.txt"
 
 
-  gcc "$c_file_path" -o "$c_file_path.out"
-  "$c_file_path.out" < "$input_file" > "$actual_output_file"
+  gcc "$c_file_path" -o "c.out"
+  "c.out" < "$input_file" > "$actual_output_file"
 
 
   if diff -q "$expected_output_file" "$actual_output_file" > /dev/null; then
