@@ -19,7 +19,7 @@ for test_dir in "$test_directory"/test*; do
 
 
   gcc "$c_file_path" -o "c.out"
-  "c.out" < "$input_file" > "$actual_output_file"
+  "./.c.out" < "$input_file" > "$actual_output_file"
 
 
   if diff -q "$expected_output_file" "$actual_output_file" > /dev/null; then
