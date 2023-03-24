@@ -1,6 +1,5 @@
 #! /bin/sh
 
-# Define the directory where the test files are located
 test_directory="/content/"
 # file path of the Java program
 java_file_path={ime_datoteke}
