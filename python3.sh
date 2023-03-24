@@ -3,7 +3,7 @@
 # Define the directory where the test files are located
 test_directory="/content/"
 # file path of the Python program
-python_file_path={language}
+python_file_path={ime_datoteke}
 
 
 num_tests_passed=0
