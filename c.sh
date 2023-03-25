@@ -1,9 +1,8 @@
 #!/bin/sh
-
 # Define the directory where the test files are located
 test_directory="/content/"
 # File path of the C program
-c_file_path={ime_datoteke}
+file_path={ime_datoteke}
 
 num_tests_passed=0
 
@@ -15,7 +14,7 @@ for test_dir in "$test_directory"/test*; do
   actual_output_file="$test_dir/my_output_c.txt"
 
   # Compile the C program
-  gcc "$c_file_path" -o "$test_dir/my_program"
+  gcc "$file_path" -o "$test_dir/my_program"
 
   "$test_dir/my_program" < "$input_file" > "$actual_output_file"
 
