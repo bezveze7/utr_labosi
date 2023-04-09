@@ -9,6 +9,9 @@ num_tests_passed=0
 for test_dir in "$test_directory"/test*; do
   echo "Running tests in $test_dir"
 
+
+
+
   input_file="$test_dir/test.a"
   expected_output_file="$test_dir/test.b"
   actual_output_file="$test_dir/my_output_c.txt"
